@@ -1,0 +1,27 @@
+# MacOS sistem dosyaları
+.DS_Store
+
+# Node.js bağımlılıkları (eğer kullanılıyorsa)
+node_modules/
+
+# Derleme çıktıları (örneğin SCSS to CSS dönüştürme gibi durumlarda)
+dist/
+build/
+
+# Geçici editör dosyaları
+*.log
+*.tmp
+*.swp
+*.swo
+
+# VSCode ayarları (ekibine bağlı olarak dahil edilip edilmeyebilir)
+.vscode/
+
+# npm, yarn gibi araçlara ait kilit dosyaları (eğer proje bunları kullanmıyorsa)
+package-lock.json
+yarn.lock
+
+*live*
+*Live*
+*LIVE*
+*LiVe*

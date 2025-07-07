@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Instagram Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+
+        .navbar-brand {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .story-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #c13584;
+        }
+
+        .post-img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .post-card {
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .story-username {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .icon-bar i {
+            font-size: 1.4rem;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .post-username {
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Instagram</a>
+            <form class="d-none d-md-block">
+                <input class="form-control form-control-sm" type="search" placeholder="Ara" aria-label="Ara" />
+            </form>
+            <div class="icon-bar d-flex align-items-center">
+                <i class="fas fa-home"></i>
+                <i class="fas fa-paper-plane"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-user-circle"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hikayeler -->
+    <div class="container my-4">
+        <div class="d-flex overflow-auto gap-3">
+            <!-- Her bir hikaye -->
+            <div class="text-center">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" class="story-img" alt="story">
+                <div class="story-username">ayse</div>
+            </div>
+            <div class="text-center">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" class="story-img" alt="story">
+                <div class="story-username">mehmet</div>
+            </div>
+            <div class="text-center">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" class="story-img" alt="story">
+                <div class="story-username">selin</div>
+            </div>
+            <div class="text-center">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" class="story-img" alt="story">
+                <div class="story-username">burak</div>
+            </div>
+            <!-- Daha fazla hikaye ekleyebilirsin -->
+        </div>
+    </div>
+
+    <!-- Gönderiler -->
+    <div class="container">
+        <div class="card post-card">
+            <div class="card-header d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-2" width="40"
+                    height="40" alt="profil">
+                <span class="post-username">ayse</span>
+            </div>
+            <img src="https://source.unsplash.com/random/600x600?nature" class="post-img" alt="post">
+            <div class="card-body">
+                <div class="d-flex gap-3 mb-2">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-paper-plane"></i>
+                </div>
+                <p class="mb-1"><strong>ayse</strong> harika bir gün!</p>
+                <p class="text-muted mb-0" style="font-size: 0.8rem;">2 saat önce</p>
+            </div>
+        </div>
+
+        <!-- 2. gönderi -->
+        <div class="card post-card">
+            <div class="card-header d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-2" width="40"
+                    height="40" alt="profil">
+                <span class="post-username">mehmet</span>
+            </div>
+            <img src="https://source.unsplash.com/random/600x600?city" class="post-img" alt="post">
+            <div class="card-body">
+                <div class="d-flex gap-3 mb-2">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-comment"></i>
+                    <i class="far fa-paper-plane"></i>
+                </div>
+                <p class="mb-1"><strong>mehmet</strong> şehirde akşam!</p>
+                <p class="text-muted mb-0" style="font-size: 0.8rem;">5 saat önce</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

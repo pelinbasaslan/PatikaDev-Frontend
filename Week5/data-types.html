@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+</head>
+
+<body>
+    <script>
+        let str = 'John\'s ';
+        console.log('str=john\'s', str);
+        console.log(typeof str, str)
+
+        console.group('GRUP');
+        console.log('console.group ile grup başlatıyorum ve groupEnd ile sonlandırıyorum.');
+
+
+        console.groupEnd();
+
+        const user = {
+            name: 'John',
+            hobbies: ['running', 'swimming']
+        };
+        console.dir(user);
+        console.log(user);
+    </script>
+
+</body>
+
+</html>

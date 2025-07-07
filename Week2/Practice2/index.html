@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orhan Pamuk</title>
+    <style>
+        /* Genel stiller */
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f9f6f2;
+            color: #3e3e3e;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            color: #f3f1eb;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Palatino Linotype', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #f3f1eb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d6cfc2;
+            border-bottom: 2px solid #d6cfc2;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        /* Giriş bölümü */
+        #intro {
+            text-align: center;
+        }
+
+        #intro img {
+            max-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #intro blockquote {
+            font-style: italic;
+            margin: 1rem auto 0;
+            max-width: 600px;
+            color: #6c5b4e;
+            font-size: 1.1rem;
+            border-left: 4px solid #a67c52;
+            padding-left: 1rem;
+        }
+
+        /* Biografi */
+        #biography h2,
+        #works h2 {
+            font-family: 'Palatino Linotype', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #a67c52;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            color: #4a3f35;
+        }
+
+        /* Eserler listesi */
+        #works ul {
+            list-style: square inside;
+            padding-left: 0;
+            color: #4a3f35;
+            font-size: 1.1rem;
+        }
+
+        #works ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            color: #f3f1eb;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 0.8rem;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            #intro img {
+                max-width: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Orhan Pamuk</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#biography">Info</a></li>
+                <li><a href="#works">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Orhan_Pamuk_Festival_Eton_2010.jpg"
+                alt="Orhan Pamuk" />
+            <blockquote>
+                “Benim adıma konuşacak, benim duygularımı yansıtacak tek bir kişi varsa, o da benimdir.”
+                <br>— Orhan Pamuk
+            </blockquote>
+        </section>
+
+        <section id="biography">
+            <h2>Biography</h2>
+            <p>
+                Orhan Pamuk (d. 7 Haziran 1952, İstanbul), Türk yazar ve Nobel Edebiyat Ödülü sahibi. İstanbul Teknik
+                Üniversitesi’nde mimarlık eğitimi aldıktan sonra
+                yazarlığa yönelmiştir. Romanları genellikle kimlik, kültür çatışmaları ve tarih temalarını işler.
+            </p>
+            <p>
+                Eserleri dünya çapında tanınmış, çeşitli dillere çevrilmiş ve hem Türkiye’de hem uluslararası alanda
+                büyük beğeni kazanmıştır.
+                2006 yılında Nobel Edebiyat Ödülü’nü kazanarak Türk edebiyatına önemli bir katkıda bulunmuştur.
+            </p>
+        </section>
+
+        <section id="works">
+            <h2>Notable Works</h2>
+            <ul>
+                <li><strong>Benim Adım Kırmızı</strong> (1998)</li>
+                <li><strong>Kar</strong> (2002)</li>
+                <li><strong>Masumiyet Müzesi</strong> (2008)</li>
+                <li><strong>Kara Kitap</strong> (1990)</li>
+                <li><strong>İstanbul: Hatıralar ve Şehir</strong> (2003)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Page Made For Pelin Su Başaslan Assignment
+    </footer>
+
+</body>
+
+</html>

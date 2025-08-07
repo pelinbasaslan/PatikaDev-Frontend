@@ -1,0 +1,91 @@
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #0ea5e9;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #0ea5e9;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #0ea5e9;
+    }
+}
+
+.playing-a {
+    animation: bounce 0.1s ease;
+}
+
+.playing-s {
+    animation: rotate 0.3s ease;
+}
+
+.playing-d {
+    animation: shake 0.1s ease;
+}
+
+.playing-f {
+    animation: glow 0.2s ease;
+}
+
+.playing-g {
+    animation: bounce 0.15s ease-in-out;
+}
+
+.playing-h {
+    animation: rotate 0.2s linear;
+}
+
+.playing-j {
+    animation: shake 0.15s ease-in-out;
+}
+
+.playing-k {
+    animation: glow 0.25s ease-in-out;
+}
+
+.playing-l {
+    animation: bounce 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+}

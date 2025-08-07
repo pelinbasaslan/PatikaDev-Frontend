@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Drum Kit</title>
+</head>
+
+<body class="bg-sky-950">
+    <div class="flex justify-center min-h-screen">
+        <div class="grid content-center gap-16 text-center">
+            <h1 class="text-white text-6xl md:text-8xl font-bold">
+                Play Your Dream Song
+            </h1>
+
+            <div class="w-full max-w-2xl mx-auto">
+                <img src="./img/drum.png" alt="Drum Kit Silhouette" class="w-full h-auto">
+            </div>
+
+
+            <audio data-key="65" src="./Sound/clap.wav"></audio>
+            <audio data-key="83" src="./Sound/hihat.wav"></audio>
+            <audio data-key="68" src="./Sound/kick.wav"></audio>
+            <audio data-key="70" src="./Sound/openhat.wav"></audio>
+            <audio data-key="71" src="./Sound/boom.wav"></audio>
+            <audio data-key="72" src="./Sound/ride.wav"></audio>
+            <audio data-key="74" src="./Sound/snare.wav"></audio>
+            <audio data-key="75" src="./Sound/tom.wav"></audio>
+            <audio data-key="76" src="./Sound/tink.wav"></audio>
+
+            <div class="flex justify-center gap-2">
+                <button data-key="65"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">A</button>
+                <button data-key="83"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">S</button>
+                <button data-key="68"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">D</button>
+                <button data-key="70"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">F</button>
+                <button data-key="71"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">G</button>
+                <button data-key="72"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">H</button>
+                <button data-key="74"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">J</button>
+                <button data-key="75"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">K</button>
+                <button data-key="76"
+                    class="w-16 h-16 bg-sky-500 text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-sky-600 transition-colors">L</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

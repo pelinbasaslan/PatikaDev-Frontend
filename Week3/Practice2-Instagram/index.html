@@ -1,143 +1,436 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Instagram Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        body {
-            background-color: #fafafa;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
 
-        .navbar-brand {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .story-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 2px solid #c13584;
-        }
-
-        .post-img {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .post-card {
-            max-width: 500px;
-            margin: 0 auto 2rem auto;
-        }
-
-        .story-username {
-            font-size: 0.8rem;
-            text-align: center;
-            margin-top: 5px;
-        }
-
-        .icon-bar i {
-            font-size: 1.4rem;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-
-        .post-username {
-            font-weight: bold;
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Instagram</title>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+    <nav class="navbar navbar-expand-sm navbar-light border fixed-top" style="height: 54px; background-color: white;">
         <div class="container">
-            <a class="navbar-brand" href="#">Instagram</a>
-            <form class="d-none d-md-block">
-                <input class="form-control form-control-sm" type="search" placeholder="Ara" aria-label="Ara" />
-            </form>
-            <div class="icon-bar d-flex align-items-center">
-                <i class="fas fa-home"></i>
-                <i class="fas fa-paper-plane"></i>
-                <i class="far fa-heart"></i>
-                <i class="far fa-user-circle"></i>
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img
+                        src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                    aria-controls="mobileMenu" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="search-box">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 empty" type="search" placeholder="Ara"
+                        style="font-family: Arial, FontAwesome; height: 28px; width: 216px;" aria-label="Search" />
+                </form>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav mt-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home fa-lg mr-2 d-none d-sm-block mt-1"></i>
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-compass fa-lg mr-2 mt-1"
+                                style="color: black"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-heart fa-lg mr-2 mt-1"
+                                style="color: black"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/demirmelihcan" target="_blank"><img
+                                src="https://placehold.co/150x150?text=(-_-)" class="mb-2"
+                                style="width: 23px; height: 23px; border-radius: 50%;" /></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hikayeler -->
-    <div class="container my-4">
-        <div class="d-flex overflow-auto gap-3">
-            <!-- Her bir hikaye -->
-            <div class="text-center">
-                <img src="https://randomuser.me/api/portraits/women/1.jpg" class="story-img" alt="story">
-                <div class="story-username">ayse</div>
+
+    <div class="container middlearea" style="padding-top: 84px;">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="card-body d-flex flex border">
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/kodluyoruz" style="text-decoration: none;" target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">kodluyoruz</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/furkantolgayuce" style="text-decoration: none;"
+                            target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">furkantolga..</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/elonrmuskk" style="text-decoration: none;" target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">elonrmuskk</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/hakanyalcinkaya" style="text-decoration: none;"
+                            target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">hakanyalcin..</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/ozgeacik" style="text-decoration: none;" target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext mr-2">ozgeacik</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/kablosuzkedi" style="text-decoration: none;" target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">kablosuzkedi</span>
+                        </a>
+                    </div>
+                    <div class="story-item text-center">
+                        <a href="https://www.instagram.com/gulcanyayla" style="text-decoration: none;" target="_blank">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="storyphoto img-fluid" />
+                            <span class="storytext">gulcanyayla</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="mr-2"
+                                style="width: 35px; height: 35px; border-radius: 50%" />
+                            <span class="postuserfont">
+                                <strong><a href="https://www.instagram.com/cengizcmataraci" target="_blank"
+                                        style="color: black;">cengizcmataraci</a></strong>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-dark"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://blog.biletbayi.com/wp-content/uploads/2019/12/rize.jpg" class="card-img-top"
+                        alt="..." />
+                    <ul class="list-group list-group-horizontal border-0 mt-1" style="list-style-type: none;">
+                        <!-- Sol taraftaki ikonlar (beğenme, yorum, paylaş) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+
+                        <!-- Sağa yaslanmış bookmark ikonu -->
+                        <li class="nav-item ml-auto"> <!-- ml-auto ekledik -->
+                            <a class="nav-link" href="#"><i class="far fa-bookmark fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                    </ul>
+                    <span>
+                        <img src="https://placehold.co/150x150?text=(-_-)" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>furkantolgayuce</strong> ve
+                            <strong>42 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Burası
+                            Rize!
+                            Harika bir cennet!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                15 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">furkantolgayuce</strong>Abi çok
+                            güzelmiş yaa! Bir gün götürürsün artık bizi de:)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmuskk</strong>That's wonderful
+                            view bro! I always want to travel Rize...
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white" style="
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right text-primary"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="mr-2"
+                                style="width: 35px; height: 35px; border-radius: 50%" />
+                            <span class="postuserfont">
+                                <strong><a href="https://www.instagram.com/kodluyoruz" target="_blank"
+                                        style="color: black;">kodluyoruz</a></strong>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-dark"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://pbs.twimg.com/media/Erx2B2bXAAEy7gO.jpg" class="card-img-top" alt="..." />
+                    <ul class="list-group list-group-horizontal border-0 mt-1" style="list-style-type: none;">
+                        <!-- Sol taraftaki ikonlar (beğenme, yorum, paylaş) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+
+                        <!-- Sağa yaslanmış bookmark ikonu -->
+                        <li class="nav-item ml-auto"> <!-- ml-auto ekledik -->
+                            <a class="nav-link" href="#"><i class="far fa-bookmark fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                    </ul>
+                    <span>
+                        <img src="https://placehold.co/150x150?text=(-_-)" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>cengizcmataraci</strong> ve
+                            <strong>670 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px; max-height: 300px; overflow-y: auto;">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">kodluyoruz</strong>Barış Balta ile
+                            AWS
+                            Quick Start Etkinliği
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                60 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Harika!
+                            Kesinlikle katılacağım! :)
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">kablosuzbeyin</strong>Topluluk
+                            olarak
+                            heyecanlıyız!
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white" style="
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right text-primary"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
+                <div class="card mt-3 mb-3">
+                    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="https://placehold.co/150x150?text=(-_-)" class="mr-2"
+                                style="width: 35px; height: 35px; border-radius: 50%" />
+                            <span class="postuserfont">
+                                <strong><a href="https://www.instagram.com/elonrmuskk" target="_blank"
+                                        style="color: black;">elonrmuskk</a></strong>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#" class="text-dark"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                    <img src="https://i.insider.com/5f1b201a5af6cc7e1b741330?width=1136&format=jpeg"
+                        class="card-img-top" alt="..." />
+                    <ul class="list-group list-group-horizontal border-0 mt-1" style="list-style-type: none;">
+                        <!-- Sol taraftaki ikonlar (beğenme, yorum, paylaş) -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-comment fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-paper-plane fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+
+                        <!-- Sağa yaslanmış bookmark ikonu -->
+                        <li class="nav-item ml-auto"> <!-- ml-auto ekledik -->
+                            <a class="nav-link" href="#"><i class="far fa-bookmark fa-lg"
+                                    style="color: black; font-size: 23px"></i></a>
+                        </li>
+                    </ul>
+                    <span>
+                        <img src="https://placehold.co/150x150?text=(-_-)" class="mb-1 ml-3"
+                            style="width: 23px; height: 23px; border-radius: 50%" />
+                        <span class="postuserfont"><strong>cengizcmataraci</strong> ve
+                            <strong>900.182 diğer kişi</strong> beğendi</span>
+                    </span>
+                    <div class="card-body" style="margin-top: -15px">
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">elonrmussk</strong>That's just
+                            beautiful!
+                        </p>
+                        <a href="#" style="text-decoration: none">
+                            <p class="card-text postuserfont" style="
+                    margin-left: -4px;
+                    margin-top: -14px;
+                    color: rgb(139, 133, 133);
+                  ">
+                                1500 yorumun tümünü gör
+                            </p>
+                        </a>
+                        <p class="card-text postuserfont">
+                            <strong style="margin-left: -4px; margin-right: 5px">cengizcmataraci</strong>Yeah! Here
+                            you
+                            go!
+                        </p>
+                        <p class="card-text postuserfont" style="margin-top: -15px">
+                            <strong style="margin-left: -4px; margin-right: 5px">spacex</strong>When are we moving?
+                        </p>
+                        <p class="card-text" style="
+                  margin-top: -10px;
+                  margin-left: -4px;
+                  font-size: 12px;
+                  color: rgb(139, 133, 133);
+                ">
+                            10 SAAT ÖNCE
+                        </p>
+                    </div>
+                    <div class="card-footer bg-white" style="
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                  'Helvetica Neue', sans-serif;
+                font-size: 14px;
+              ">
+                        <span style="margin-left: -4px">Yorum Ekle...</span><span class="float-right text-primary"
+                            style="color: #0095f6; opacity: 50%"><strong>Paylaş</strong></span>
+                    </div>
+                </div>
             </div>
-            <div class="text-center">
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" class="story-img" alt="story">
-                <div class="story-username">mehmet</div>
+            <div class="col-3 pl-1 position-sticky" style="top: 84px; border: none; width: 293px;">
+                <div class="card bg-transparent border-0" style="width: 100%;">
+                    <div class="card-body p-0">
+                        <!-- Profil bilgisi -->
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://placehold.co/150x150?text=(-_-)"
+                                class="rounded-circle border border-danger" style="width: 56px; height: 56px;" />
+                            <div class="ml-3">
+                                <strong>cengizcmataraci</strong>
+                                <div class="text-muted" style="font-size: 14px;">Cengiz Mataracı</div>
+                            </div>
+                        </div>
+
+                        <!-- Öneriler başlığı -->
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="text-muted">Senin İçin Öneriler</span>
+                            <a href="#" class="font-weight-bold" style="font-size: 12px;">Tümünü Gör</a>
+                        </div>
+
+                        <!-- Öneri listesi -->
+                        <div class="mb-3">
+                            <!-- Öneri 1 -->
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/150x150?text=(-_-)" class="rounded-circle mr-3"
+                                        style="width: 32px; height: 32px;" />
+                                    <div>
+                                        <div style="font-size: 14px;">kablosuzbeyin</div>
+                                        <div class="text-muted" style="font-size: 12px;">Seni takip ediyor</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-primary font-weight-bold" style="font-size: 12px;">Takip Et</a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/150x150?text=(-_-)" class="rounded-circle mr-3"
+                                        style="width: 32px; height: 32px;" />
+                                    <div>
+                                        <div style="font-size: 14px;">elonmusk</div>
+                                        <div class="text-muted" style="font-size: 12px;">Seni takip ediyor</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-primary font-weight-bold" style="font-size: 12px;">Takip Et</a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://placehold.co/150x150?text=(-_-)" class="rounded-circle mr-3"
+                                        style="width: 32px; height: 32px;" />
+                                    <div>
+                                        <div style="font-size: 14px;">kodluyoruz</div>
+                                        <div class="text-muted" style="font-size: 12px;">Seni takip ediyor</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-primary font-weight-bold" style="font-size: 12px;">Takip Et</a>
+                            </div>
+                            <!-- Diğer öneriler aynı şekilde eklenir -->
+                        </div>
+
+                        <!-- Footer linkleri -->
+                        <div class="mt-4" style="font-size: 11px; color: #c7c7c7;">
+                            <!-- Linkler buraya -->
+                            <div class="mb-2">© 2023 INSTAGRAM FROM KODLUYORUZ</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-center">
-                <img src="https://randomuser.me/api/portraits/women/3.jpg" class="story-img" alt="story">
-                <div class="story-username">selin</div>
-            </div>
-            <div class="text-center">
-                <img src="https://randomuser.me/api/portraits/men/4.jpg" class="story-img" alt="story">
-                <div class="story-username">burak</div>
-            </div>
-            <!-- Daha fazla hikaye ekleyebilirsin -->
         </div>
     </div>
-
-    <!-- Gönderiler -->
-    <div class="container">
-        <div class="card post-card">
-            <div class="card-header d-flex align-items-center">
-                <img src="https://randomuser.me/api/portraits/women/1.jpg" class="rounded-circle me-2" width="40"
-                    height="40" alt="profil">
-                <span class="post-username">ayse</span>
-            </div>
-            <img src="https://source.unsplash.com/random/600x600?nature" class="post-img" alt="post">
-            <div class="card-body">
-                <div class="d-flex gap-3 mb-2">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-comment"></i>
-                    <i class="far fa-paper-plane"></i>
-                </div>
-                <p class="mb-1"><strong>ayse</strong> harika bir gün!</p>
-                <p class="text-muted mb-0" style="font-size: 0.8rem;">2 saat önce</p>
-            </div>
-        </div>
-
-        <!-- 2. gönderi -->
-        <div class="card post-card">
-            <div class="card-header d-flex align-items-center">
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-2" width="40"
-                    height="40" alt="profil">
-                <span class="post-username">mehmet</span>
-            </div>
-            <img src="https://source.unsplash.com/random/600x600?city" class="post-img" alt="post">
-            <div class="card-body">
-                <div class="d-flex gap-3 mb-2">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-comment"></i>
-                    <i class="far fa-paper-plane"></i>
-                </div>
-                <p class="mb-1"><strong>mehmet</strong> şehirde akşam!</p>
-                <p class="text-muted mb-0" style="font-size: 0.8rem;">5 saat önce</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

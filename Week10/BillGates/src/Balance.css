@@ -1,0 +1,25 @@
+.section-balance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.balance-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-bg-color);
+    width: 100%;
+    padding: 20px;
+}
+
+.balance-div p {
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}

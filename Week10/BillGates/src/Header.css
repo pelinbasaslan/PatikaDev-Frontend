@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    background-color: var(--card-bg-color);
+    padding: 20px 0;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.logo img {
+    width: 35%;
+    margin-left: 260px;
+    transition: transform 0.1s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card p {
+    color: var(--price-color);
+    font-size: 24px;
+}
+
+.card h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.buy-button {
+    background: var(--second-bg-color);
+    padding: 8px 28px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.sell-button {
+    background-color: #f53b66;
+    padding: 8px 28px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.sell-button:disabled {
+    background-color: var(--bg-color);
+    color: #333333;
+}
+
+.buy-button:disabled {
+    background: var(--bg-color);
+    color: #333333;
+}
+
+textarea#amount {
+    text-align: center;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+}
+
+textarea#amount:active {
+    border: 2px solid #333333;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+    align-items: start;
+    width: 66%;
+    margin: 20px auto;
+}

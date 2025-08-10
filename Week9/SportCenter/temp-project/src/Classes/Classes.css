@@ -1,0 +1,346 @@
+.section-white.classes::after {
+    content: "";
+    position: absolute;
+    left: 35%;
+    /* Sola hizala */
+    top: 0;
+    width: 100%;
+    /* Mobilde taşmayı engelle */
+    height: 100%;
+    background-color: #f6f6f6;
+    z-index: -2;
+    clip-path: polygon(0 0, 65% 0, 65% 68%, 20% 68%);
+}
+
+/*sectionun arkada kalmaması için indexini 2 verdim*/
+.section-white.classes {
+    z-index: 2;
+}
+
+.classes-container {
+    width: 100%;
+}
+
+.classes-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+/*div deki herbir p tagına ortak stil verdim*/
+.classes-info-p p {
+    color: var(--text-color-3);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* p tagına margin-top verdim*/
+.classes-info-p p {
+    margin-top: 4px;
+}
+
+/*butonların olduğu divin düzenlenmesi hizalanması*/
+.classes-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 40px;
+}
+
+/*tıklanan butona ekleyeceğim stiller*/
+.highlight {
+    background-color: var(--background-color-3) !important;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 4px var(--background-color-3));
+    position: relative;
+}
+
+/*tıklanan butonun altında çıkacak üçgen*/
+.highlight::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--background-color-3) transparent transparent transparent;
+    transform: translateX(-50%);
+}
+
+/*her bir butona ortak stil verdim*/
+.classes-buttons button {
+    background-color: var(--text-color-2);
+    color: var(--text-color-1);
+    border-radius: 3px;
+    padding: 6px 16px;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+/*değişecek olan içeriğin olduğu divin genel stili*/
+.classes-choosen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    line-height: 1.5;
+}
+
+/*değişecek infonun olduğu divin stili*/
+.classes-choosen-info {
+    width: 26%;
+    text-align: justify;
+}
+
+/*değişecek infonun h3 tagına müdahale*/
+.classes-choosen-info h3 {
+    color: var(--text-color-3);
+    font-weight: 800;
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+
+/*değişecek infonun p tagına müdahale*/
+.classes-choosen-info p {
+    color: var(--text-color-3);
+    font-weight: 600;
+}
+
+/*burada her bir p tagı arasına boşluk verdim*/
+.classes-choosen-info #info-desc {
+    margin-bottom: 28px;
+}
+
+.classes-choosen-info #info-time-title {
+    margin-bottom: 20px;
+}
+
+.classes-choosen-info #info-time {
+    margin-bottom: 20px;
+}
+
+.classes-choosen-info #info-time-add {
+    margin-bottom: 20px;
+}
+
+/*imgnin içinde bulunduğu divin boyutlandırması*/
+.classes-choosen-photo {
+    width: 22%;
+}
+
+/*divin içindeki img nin boyutlandırılması*/
+.classes-choosen-photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*bmi hesabının yapılacağı divin stili*/
+.bmi-calculator {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 140px;
+    line-height: 1.5;
+}
+
+/*sol taraftaki infolar için oluşturduğum divin stili*/
+.bmi-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/*sol taraftaki üst bilgiler için oluşturduğum divin boyutlandırılması*/
+.bmi-info-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*iki p arasındaki boşluk için 1. p hariç diğer p'ye üst margin*/
+.bmi-info-top p~p {
+    margin-top: 20px
+}
+
+/*sola yaslı olacağı için genel p stilini kullanmadım*/
+.bmi-info-top p {
+    color: var(--text-color-3);
+    font-weight: 600;
+}
+
+/*bmi-info-top içindeki h3 tagına müdahale*/
+.bmi-info-top h3 {
+    color: var(--text-color-2);
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+/*weight ve height inputlarının olduğu divin genel stili*/
+.bmi-inputs {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+.bmi-input {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+/*bmi-input içindeki her bir inputun stili*/
+.bmi-inputs input {
+    margin: 0 1px;
+    width: 80%;
+    padding: 2px 2px;
+    border-radius: 3px;
+    border: 1.7px solid rgb(69, 68, 68);
+}
+
+/*bmi-img divinin stili*/
+.bmi-img {
+    width: 32%;
+    position: relative;
+    display: inline-block;
+}
+
+/*bmi-img içindeki img'nin boyutlandırılması*/
+.bmi-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*bmi hesabında resmin altında gözükecek olan imleç*/
+#bmi-indicator {
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+    transition: left 0.5s ease-in-out;
+    width: 20px;
+    height: 20px;
+    background: var(--background-color-3);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+@media (max-width: 576px) {
+    .classes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classes-info-p {
+        width: 70%;
+    }
+
+    .section-white.classes::after {
+        left: 30%;
+        clip-path: polygon(0 0, 70% 0, 70% 63%, 20% 63%);
+    }
+
+    .classes-choosen {
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+        text-align: justify;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .classes-choosen-info {
+        width: 100%;
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    .classes-choosen-info #info-title,
+    .classes-choosen-info #info-time-title {
+        text-align: start;
+        font-size: 24px;
+    }
+
+    .classes-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        width: 80%;
+        margin: 40px 0;
+    }
+
+    .classes-buttons button {
+        padding: 6px 16px;
+        font-weight: 800;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .classes-choosen-photo {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    /*bmi ile ilgili düzenlemeler*/
+    .bmi-calculator {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 120px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .bmi-info {
+        width: 100%;
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+    .bmi-info-top h3 {
+        font-size: 30px;
+    }
+
+    .bmi-info-top p~p {
+        margin-top: 20px
+    }
+
+    .bmi-inputs {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .bmi-input {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        width: 80%;
+    }
+
+    .bmi-inputs input {
+        margin: 0;
+        width: 80%;
+        padding: 2px 2px;
+    }
+
+    .bmi-img {
+        width: 100%;
+    }
+}

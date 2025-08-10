@@ -1,42 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/*Genel sayfa düzenlemeleri başta sıfırlıyorum.*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+/*x ekseninde taşmayı engelliyorum*/
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/*genel seçici olarak kullanacağım renkleri veriyorum*/
+:root {
+  --background-color-1: #ffffff;
+  --background-color-2: #f1f8ff;
+  --background-color-3: #f39c11;
+  --text-color-1: #ffffff;
+  --text-color-2: #395389;
+  --text-color-3: #616161;
+  --text-color-4: #1b1f22;
+}
+
+/*arka planı beyaz olarak kullanacağım section*/
+.section-white {
+  position: relative;
+  background-color: var(--background-color-1);
+  padding: 65px 0 35px 0;
+  width: 100%;
+}
+
+/*arka planı mavi olarak kullanacağım  section*/
+.section-blue {
+  background-color: var(--background-color-2);
+  position: relative;
+  padding: 65px 0 35px 0;
+  width: 100%;
+}
+
+/*tüm sectionlardaki h2 lere ortak stil veriyorum */
+section h2 {
+  color: var(--text-color-2);
+  font-weight: 800;
+  text-align: center;
+  font-size: 28px;
+}
+
+/*p classı eklediğim tüm sectionların içindeki p ye ortak stil*/
+.section-white.p,
+.section-blue.p {
+  color: var(--text-color-3);
+  font-weight: 600;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+section h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 6px;
+  background-color: var(--background-color-3);
+  margin: 8px auto 34px;
+  border-radius: 3px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-hmbrgr {
+  display: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/*responsive tasarım 576px altında çalışacak*/
+@media (max-width: 576px) {
+
+  /*genel başlıkları küçülttüm*/
+  section h2 {
+    font-size: 20px;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/*56px üzerinde hamburger menuyu gizliyorum*/
+@media (min-width: 577px) {
+  .menu-hmbrgr {
+    display: none !important;
+  }
 }
